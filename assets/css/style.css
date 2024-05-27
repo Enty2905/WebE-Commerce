@@ -1,0 +1,258 @@
+/* Button */
+.btn {
+    min-width: 180px;
+    background: var(--primary-color);
+    color: white;
+    font-size: 2rem;
+    padding: 10px 0;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn:active {
+    transform: scale(0.9);
+    transition: ease .5s;
+}
+
+/* End Button */
+/* Header */
+.header {
+    width: 100vw;
+    height: 100vh;
+    background: var(--primary-color);
+}
+
+/* Narbar */
+.header .navbar {
+    padding: 0;
+}
+
+.header .inner-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .navbar .menu {
+    display: flex;
+}
+
+.header .navbar .menu li {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+    padding: 20px 15px;
+    color: white;
+}
+
+.header .navbar .menu li:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.header .navbar .social {
+    padding: 0 10px;
+}
+
+.header .navbar .social i {
+    margin-left: 10px;
+    color: white;
+}
+
+/* hader */
+.hader {
+    background-color: var(--color-bg);
+    padding: 50px 0 75px 0;
+    color: #131717;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hader .inner-hader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hader .info {
+    width: 80%;
+    padding-top: 20px;
+}
+
+.hader .info .title {
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.1;
+}
+
+.hader .info .inner-video {
+    margin: 20px 0 30px 0;
+    position: relative;
+}
+
+.hader .info .inner-video i {
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+    color: var(--primary-color);
+}
+
+.hader .info .desc {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.hader .inner-img img {
+    width: 528px;
+}
+
+/* End Header */
+/* Intro */
+.intro {
+    margin-top: 150px;
+    width: 100vw;
+}
+
+.intro .inner-intro {
+    display: flex;
+    gap: 70px;
+}
+
+.intro .inner-intro .title {
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+.intro .inner-intro .desc {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.intro .inner-intro .menu {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+.intro .inner-intro .menu li {
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.6;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.intro .inner-intro .menu i {
+    font-size: 1.3rem;
+    margin-right: 10px;
+}
+
+/* End Intro */
+/* Category */
+.category {
+    margin-top: 150px;
+}
+
+.category .inner-head .category-menu {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.category .inner-head .category-menu li {
+    color: #566363;
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.6;
+}
+
+.category .inner-body {
+    margin: 60px 0;
+}
+
+.category .inner-body .inner-box {
+    margin-bottom: 20px;
+}
+
+.category .inner-body .inner-box figcaption {
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.5;
+}
+
+.category .inner-head .category-menu li.active {
+    color: black;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.category .inner-footer .inner-btn {
+    text-align: center;
+}
+
+/* End Category */
+/* New Product */
+.new-products {
+    margin-top: 150px;
+}
+.new-products .inner-head{
+    margin-bottom: 70px;
+}
+.new-products .inner-head .title{
+    font-weight: 700;
+    font-size: 5.8rem;
+    line-height: 1.1;
+}
+.new-products .inner-box{
+    padding: 20px;
+    /* box-shadow: 3px 3px 7px rgba(0,0,0,.07); */
+    /* box-shadow: 2px 2px 5px rgba(0,0,0,.06); */
+    box-shadow: rgba(39, 40, 51, 0.06) 0px 0.25rem 2.5rem;
+    margin-bottom: 40px;
+}
+.new-products .inner-box .wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.new-products .inner-box .image{
+    width: 320px;
+    height: 267px;
+    object-fit: cover;
+}
+.new-products .inner-box .status{
+    font-size: 1.4rem;
+    line-height: 1.7;
+    color: #566363;
+}
+.new-products .inner-box .title{
+    font-size: 2rem;
+    line-height: 1.7;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.new-products .inner-box .evaluate span ,.new-products .inner-box .price{
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #566363;
+}
+.new-products .inner-box .price{
+    color: black;
+    font-weight: 600;
+}
+.new-products .inner-btn{
+    text-align: center;
+    margin-top: 30px;
+}
+/* End New Product */
