@@ -1,0 +1,30 @@
+.intro-contact {
+    padding: 50px 0;
+    background: var(--color-bg);
+}
+
+.intro-contact .title {
+    margin-bottom: 20px;
+    font-size: 6rem;
+}
+
+.intro-contact .desc {
+    opacity: 0.7;
+}
+
+input , textarea{
+width: 100%;
+}
+.form-contact{
+    padding: 75px 0;
+}
+.form-contact .container{
+    max-width: 700px;
+}
+.form-contact input {
+    padding: 20px 10px;
+    margin-bottom: 30px;
+}
+.form-contact input , .form-contact textarea{
+    font-size: 2rem;
+}

@@ -1,0 +1,109 @@
+/* Info */
+.info {
+    margin-top: 100px;
+}
+
+.info .inner-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info .select-product {
+    display: flex;
+    gap: 50px;
+}
+
+.info .select {
+    border: 1px solid grey;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.info .select i {
+    margin-right: 5px;
+}
+
+.info .menu-item {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+    display: none;
+}
+
+.info .menu-item .item {
+    opacity: 0; 
+    transform: translateX(-100%); 
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.info .menu-item .item a {
+    padding: 10px 15px;
+    border: 1px solid rgb(193, 186, 186);
+    border-radius: 6px;
+    color: black;
+}
+
+.info .menu-item.show {
+    display: flex; 
+}
+
+/* End Info */
+/* Sofa */
+.product {
+    margin-bottom: 100px;
+}
+.product .inner-head{
+    margin: 70px 0 40px;
+}
+.product .inner-box {
+    box-shadow: 0 0 5px 1px rgb(219, 218, 218);
+    padding: 30px 20px;
+    border-radius: 6px;
+    margin-bottom: 50px;
+}
+.product .row{
+    padding-left: -20px;
+    padding-right: -20px;
+}
+.product .col-4{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.product .product-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.product .inner-box-body {
+    margin-top: 10px;
+}
+
+.product .name-product {
+    font-weight: 800;
+}
+.product .desc{
+    color: grey;
+    opacity: 0.7;
+}
+.product .evaluate{
+    display: flex;
+    align-items: end;
+    margin-bottom: 10px;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.product .evaluate .price{
+    margin-left: auto;
+}
+.product .btn{
+    width: 100%;
+    padding: 5px 0; 
+}
+/* End Sofa */
