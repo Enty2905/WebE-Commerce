@@ -55,25 +55,29 @@
     display: flex;
 }
 
-.header .navbar .menu li {
+.header .navbar .menu > li {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
-    padding: 15px 15px;
+    padding: 15px;
+    color: white;
+    position: relative;
+    min-width: 86px;
+    text-align: center;
 }
 
-.header .navbar .menu li a {
+.header .navbar .menu > li a {
     color: white;
 }
 
-.header .navbar .menu li:hover {
+.header .navbar .menu > li:hover {
     background-color: white;
     font-weight: 600;
+    color: var(--primary-color);
 }
 
-.header .navbar .menu li:hover a {
+.header .navbar .menu > li:hover a {
     color: var(--primary-color);
-
 }
 
 .header .btn-action{
@@ -82,7 +86,28 @@
     line-height: 1.75;
     color: white;
 }
+.header .product-menu{
+    display: none;
+}
 
+.header .menu > li:nth-child(3):hover .product-menu{
+    display: block;
+    position: absolute;
+    top: 58px;
+    left: 0;
+}
+.header .menu > li:nth-child(3):hover .product-menu li{
+    padding: 15px;
+    min-width: 86px;
+    text-align: center;
+    background-color: white;
+}
+.header .menu > li:nth-child(3):hover .product-menu li:hover{
+    background: var(--primary-color);
+}
+.header .menu > li:nth-child(3):hover .product-menu li:hover a{
+    color: white;
+}
 /* hader */
 .hader {
     background-color: var(--color-bg);
@@ -126,8 +151,8 @@
 
 /* End Header */
 /* Intro */
-.intro {
-    margin-top: 150px;
+main div.intro {
+    margin-top: 80px;
     width: 100vw;
 }
 
@@ -169,7 +194,7 @@
 /* End Intro */
 /* New Product */
 .new-products {
-    margin-top: 150px;
+    margin-top: 80px;
 }
 
 .new-products .inner-head {
@@ -231,7 +256,7 @@
 /* End New Product */
 /* Services */
 .services {
-    margin-top: 150px;
+    margin-top: 80px;
 }
 
 .services .inner-content {
@@ -286,7 +311,7 @@
 /* End Services */
 /* Featured Products */
 .featured-products {
-    margin-top: 150px;
+    margin-top: 80px;
 }
 
 .featured-products .inner-head {
@@ -314,7 +339,7 @@
 /* End Featured Products */
 /* Comments */
 .comments {
-    margin-top: 150px;
+    margin-top: 80px;
 }
 
 .comments .inner-head {
@@ -346,7 +371,7 @@
 /* Sub */
 .subscribe {
     padding: 100px 0;
-    margin-top: 150px;
+    margin-top: 80px;
     background: var(--primary-color);
     color: white;
 }
