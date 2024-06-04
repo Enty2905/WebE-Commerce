@@ -35,13 +35,14 @@
     background: var(--primary-color);
     z-index: 100;
     position: sticky;
-    top: 0; /* Thêm thuộc tính này */
+    top: 0;
+    /* Thêm thuộc tính này */
 }
 
 /* Narbar */
 .header .navbar {
     padding: 0;
- 
+
 }
 
 .header .inner-head {
@@ -60,23 +61,25 @@
     line-height: 1.75;
     padding: 15px 15px;
 }
-.header .navbar .menu li a{
+
+.header .navbar .menu li a {
     color: white;
 }
+
 .header .navbar .menu li:hover {
     background-color: white;
     font-weight: 600;
 }
-.header .navbar .menu li:hover a{
+
+.header .navbar .menu li:hover a {
     color: var(--primary-color);
 
 }
-.header .navbar .social {
-    padding: 0 10px;
-}
 
-.header .navbar .social i {
-    margin-left: 10px;
+.header .btn-action{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
     color: white;
 }
 
