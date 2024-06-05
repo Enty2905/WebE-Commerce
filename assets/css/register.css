@@ -7,7 +7,18 @@
     z-index: 0;
 }
 
-.login {
+.register .btn-back {
+    position: relative;
+    z-index: 100;
+    top: -20px;
+    left: -20px;
+    color: black;
+    padding: 8px 10px;
+    border: 1px solid rgba(128, 128, 128, 0.321);
+    border-radius: 50%;
+}
+
+.register {
     padding: 70px 0;
     background: url(../image/img-bg.jpg);
     width: 100vw;
@@ -16,7 +27,7 @@
     position: relative;
 }
 
-.inner-login .inner-left {
+.inner-register .inner-left {
     width: 50%;
     padding-top: 100px;
     position: relative;
@@ -28,7 +39,7 @@
     width: 400px;
 }
 
-.inner-login .inner-right {
+.inner-register .inner-right {
     position: absolute;
     z-index: 1;
     right: 250px;
@@ -36,6 +47,7 @@
     padding: 40px 30px 100px;
     background-color: white;
     border-top-left-radius: 20px;
+    max-height: 630px;
     border-top-right-radius: 20px;
     max-height: 630px;
 }
@@ -47,7 +59,7 @@
     margin-bottom: 50px;
 }
 
-.inner-login .logo {
+.inner-register .logo {
     margin-bottom: 150px;
     font-size: 5rem;
     color: white;
@@ -61,7 +73,7 @@
     margin-bottom: 25px;
 }
 
-.inner-login .desc {
+.inner-register .desc {
     color: white;
     opacity: 0.7;
 }
@@ -81,11 +93,13 @@ button {
     border: 1px solid rgba(128, 128, 128, 0.321);
     box-shadow: rgba(78, 84, 92, 0.25) 0px 0px 3px 4px;
 }
-.btn-login{
+
+.btn-register {
     background-color: black;
 
 }
-.btn-login a{
+
+.btn-register a {
     color: white;
 }
 
@@ -121,7 +135,7 @@ button {
     font-weight: 700;
 }
 
-.login-option button {
+.register-option button {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -132,25 +146,49 @@ button img {
     height: 20px;
 }
 
-.login-option button span {
+.register-option button span {
     flex-grow: 1;
     font-weight: 800;
     text-align: center;
 }
 
-@media (max-width: 415px) {
-    .login {
-    padding: 25px 0 10px;
+@media (max-width: 1199.98px) {
+   
+    .inner-register {
+        display: flex;
+        align-items: center;
+        justify-content:center;
     }
+    .inner-register .inner-left{
+        margin-left: 0;
+    }
+    .inner-register .inner-right {
+        position: relative;
+        right: 0;
+        bottom: -0;
+        border-radius: 6px;
+    }
+}
+@media (max-width: 990.98px) {
+    .inner-register .inner-left{
+        display: none;
+    }
+}
+@media (max-width: 415px) {
+    .register {
+        padding: 25px 0 10px;
+    }
+
     .inner-left {
         display: none;
     }
-    .inner-login .inner-right {
+
+    .inner-register .inner-right {
         position: relative;
         right: 0;
         top: 0;
-        width: 100%;
+        width: 80%;
         height: 100%;
-    border-radius: 6px;
+        border-radius: 6px;
     }
 }

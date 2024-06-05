@@ -1,3 +1,4 @@
+/* Tạo 1 background có màu xám và xét cho z-index = 0 để thấp hơn 2 phần tử kia */
 .bg-grey {
     position: absolute;
     width: 100vw;
@@ -6,7 +7,8 @@
     background-color: rgba(31, 29, 29, 0.597);
     z-index: 0;
 }
-.login .btn-back{
+/* Css cho 2 nút back về */
+.login .btn-back {
     position: relative;
     z-index: 100;
     top: -20px;
@@ -16,6 +18,7 @@
     border: 1px solid rgba(128, 128, 128, 0.321);
     border-radius: 50%;
 }
+/* Bg-img để có bg là 1 tấm ảnh và bg-size cover để tấm ảnh luôn vừa với kích thước */
 .login {
     padding: 70px 0;
     background: url(../image/img-bg.jpg);
@@ -42,7 +45,7 @@
     z-index: 1;
     right: 250px;
     bottom: 0;
-    padding: 40px 30px 100px;
+    padding: 40px 30px 100px; 
     background-color: white;
     border-top-left-radius: 20px;
     max-height: 630px;
@@ -91,14 +94,16 @@ button {
     border: 1px solid rgba(128, 128, 128, 0.321);
     box-shadow: rgba(78, 84, 92, 0.25) 0px 0px 3px 4px;
 }
-.btn-login{
+
+.btn-login {
     background-color: black;
 
 }
-.btn-login a{
+
+.btn-login a {
     color: white;
 }
-
+/* Để thẻ div và span có thể nằm trên 1 dòng */
 .line {
     display: flex;
     align-items: center;
@@ -147,20 +152,47 @@ button img {
     font-weight: 800;
     text-align: center;
 }
-
-@media (max-width: 415px) {
-    .login {
-    padding: 25px 0 10px;
+/* Reponsive khi màn hình về các độ dài khac nhau : width của màn hình */
+@media (max-width: 1199.98px) {
+    .inner-login {
+        display: flex;
+        align-items: center;
+        justify-content:center;
     }
-    .inner-left {
-        display: none;
+    .inner-login .inner-left{
+        margin-left: 0;
     }
     .inner-login .inner-right {
         position: relative;
         right: 0;
+        bottom: -0;
+        border-radius: 6px;
+    }
+}
+
+/* Khi còn 991px thì ẩn khối bên phải */
+@media (max-width: 990.98px) {
+    .inner-login .inner-left{
+        display: none;
+    }
+}
+
+
+@media (max-width: 415px) {
+    .login {
+        padding: 25px 0 10px;
+    }
+
+    .inner-left {
+        display: none;
+    }
+
+    .inner-login .inner-right {
+        position: relative;
+        right: 0;
         top: 0;
-        width: 100%;
+        width: 80%;
         height: 100%;
-    border-radius: 6px;
+        border-radius: 6px;
     }
 }
