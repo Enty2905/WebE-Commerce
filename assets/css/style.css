@@ -314,7 +314,9 @@ main div.intro {
 
 .new-products .inner-box .image {
     width: 100%;
+    height: 276px;
     object-fit: cover;
+    border-radius: 19px;
 }
 
 .new-products .inner-box .status {
