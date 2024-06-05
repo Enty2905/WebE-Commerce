@@ -1,5 +1,5 @@
 .intro-contact {
-    padding: 50px 0;
+    padding: 30px 0;
     background: var(--color-bg);
 }
 
@@ -12,19 +12,37 @@
     opacity: 0.7;
 }
 
-input , textarea{
-width: 100%;
+input,
+textarea {
+    width: 100%;
 }
-.form-contact{
-    padding: 75px 0;
+
+.form-contact {
+    padding: 50px 0;
 }
-.form-contact .container{
+
+.form-contact .container {
     max-width: 700px;
 }
-.form-contact input {
+
+.form-contact input , .form-contact textarea {
     padding: 20px 10px;
     margin-bottom: 30px;
 }
-.form-contact input , .form-contact textarea{
+
+.form-contact input,
+.form-contact textarea {
     font-size: 2rem;
+}
+.form-contact .inner-btn{
+    display: flex;
+    justify-content:end;
+}
+.inner-btn button{
+    padding: 10px 30px;
+    background: none;
+    border: 1px solid rgba(128, 128, 128, 0.434);
+    border-radius: 3px;
+    font-weight: 800;
+    color: rgb(128, 128, 128);
 }

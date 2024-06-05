@@ -1,3 +1,9 @@
+@media (max-width:767.98px) {
+    .title-head {
+        text-align: center;
+    }
+}
+
 /* Button */
 .btn {
     min-width: 180px;
@@ -55,7 +61,7 @@
     display: flex;
 }
 
-.header .navbar .menu > li {
+.header .navbar .menu>li {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
@@ -66,48 +72,122 @@
     text-align: center;
 }
 
-.header .navbar .menu > li a {
+.header .navbar .menu>li a {
     color: white;
 }
 
-.header .navbar .menu > li:hover {
+.header .navbar .menu>li:hover {
     background-color: white;
     font-weight: 600;
     color: var(--primary-color);
 }
 
-.header .navbar .menu > li:hover a {
+.header .navbar .menu>li:hover a {
     color: var(--primary-color);
 }
 
-.header .btn-action{
+.header .btn-action {
     font-size: 1.6rem;
     font-weight: 400;
     line-height: 1.75;
     color: white;
 }
-.header .product-menu{
+
+.header .product-menu {
     display: none;
 }
 
-.header .menu > li:nth-child(3):hover .product-menu{
+.header .menu>li:nth-child(3):hover .product-menu {
     display: block;
     position: absolute;
     top: 58px;
     left: 0;
 }
-.header .menu > li:nth-child(3):hover .product-menu li{
+
+.header .menu>li:nth-child(3):hover .product-menu>li {
     padding: 15px;
     min-width: 86px;
     text-align: center;
     background-color: white;
 }
-.header .menu > li:nth-child(3):hover .product-menu li:hover{
+
+.header .menu>li:nth-child(3):hover .product-menu>li:hover {
     background: var(--primary-color);
 }
-.header .menu > li:nth-child(3):hover .product-menu li:hover a{
+
+.header .menu>li:nth-child(3):hover .product-menu>li:hover a {
     color: white;
 }
+
+.header .inner-menu-mobile {
+    display: none;
+    font-size: 3rem;
+}
+
+.menu-mb {
+    display: none;
+}
+
+@media (max-width:767.98px) {
+    .header {
+        height: 100%;
+        padding: 10px 0;
+        position: relative;
+    }
+    .menu-mb {
+        opacity: 0;
+        transition: opacity 0.5s ease;
+    }
+    
+    .menu-mb.show {
+        display: block;
+        opacity: 1;
+    }
+    
+
+    .header .inner-menu-mobile {
+        display: block;
+    }
+
+    .menu-mb {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        padding-left: 50px;
+        width: 100%;
+        background-color: grey;
+    }
+
+    .menu-mb li {
+        flex-grow: 1;
+    }
+
+    .menu-mb li a {
+        padding: 10px;
+        display: inline-block;
+        font-size: 1.8rem;
+        color: white;
+        font-weight: 700;
+        min-width: 85px;
+    }
+
+    .menu-mb li a:hover {
+        background-color: white;
+        color: var(--primary-color);
+    }
+
+    .menu-mb .item-action {
+        margin: 10px 0;
+    }
+
+    .header .navbar .menu,
+    .header .inner-action {
+        display: none;
+    }
+}
+
 /* hader */
 .hader {
     background-color: var(--color-bg);
@@ -121,7 +201,6 @@
 
 .hader .info {
     width: 80%;
-    padding-top: 20px;
 }
 
 .hader .info .inner-video {
@@ -149,35 +228,52 @@
     width: 528px;
 }
 
+@media (max-width: 991.98px) {
+    .hader .info {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .hader {
+        padding-bottom: 50px;
+        height: 100%;
+    }
+}
+
 /* End Header */
 /* Intro */
 main div.intro {
-    margin-top: 80px;
+    margin-top: 70px;
     width: 100vw;
 }
 
-.intro .inner-intro {
+.intro {
     display: flex;
     gap: 70px;
 }
 
-.intro .inner-intro .title {
+.intro .title {
     margin-bottom: 30px;
 }
 
-.intro .inner-intro .desc {
+.inner-intro {
+    margin-top: 30px;
+    padding: 15px;
+}
+
+.intro .desc {
     font-weight: 400;
     font-size: 1.8rem;
     line-height: 1.6;
 }
 
-.intro .inner-intro .menu {
+.intro .menu {
     display: flex;
     flex-wrap: wrap;
     margin: 40px 0;
 }
 
-.intro .inner-intro .menu li {
+.intro .menu li {
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 1.6;
@@ -186,7 +282,7 @@ main div.intro {
     align-items: center;
 }
 
-.intro .inner-intro .menu i {
+.intro .menu i {
     font-size: 1.3rem;
     margin-right: 10px;
 }
@@ -194,11 +290,11 @@ main div.intro {
 /* End Intro */
 /* New Product */
 .new-products {
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .new-products .inner-head {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .new-products .inner-box {
@@ -206,7 +302,7 @@ main div.intro {
     /* box-shadow: 3px 3px 7px rgba(0,0,0,.07); */
     /* box-shadow: 2px 2px 5px rgba(0,0,0,.06); */
     box-shadow: rgba(39, 40, 51, 0.06) 0px 0.25rem 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .new-products .inner-box .wrap {
@@ -217,10 +313,8 @@ main div.intro {
 }
 
 .new-products .inner-box .image {
-    width: 320px;
-    height: 267px;
+    width: 100%;
     object-fit: cover;
-
 }
 
 .new-products .inner-box .status {
@@ -256,7 +350,7 @@ main div.intro {
 /* End New Product */
 /* Services */
 .services {
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .services .inner-content {
@@ -264,7 +358,7 @@ main div.intro {
 }
 
 .services .inner-head {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 
 }
 
@@ -290,11 +384,12 @@ main div.intro {
 }
 
 .services .inner-btn {
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .services .inner-btn .btn {
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .btn-services {
@@ -308,14 +403,22 @@ main div.intro {
     background-color: var(--primary-color);
 }
 
+@media (max-width: 767.98px) {
+    .services .icon {}
+}
+
 /* End Services */
 /* Featured Products */
 .featured-products {
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .featured-products .inner-head {
-    margin-bottom: 70px;
+    margin-bottom: 50px;
+}
+
+.featured-products .inner-box {
+    margin-bottom: 30px;
 }
 
 .featured-products .inner-box .title {
@@ -339,7 +442,7 @@ main div.intro {
 /* End Featured Products */
 /* Comments */
 .comments {
-    margin-top: 80px;
+    margin-top: 70px;
 }
 
 .comments .inner-head {
@@ -367,11 +470,17 @@ main div.intro {
     margin-right: 5px;
 }
 
+@media (max-width: 767.98px) {
+    .comment-box {
+        margin-bottom: 30px;
+    }
+}
+
 /* End Comments */
 /* Sub */
 .subscribe {
     padding: 100px 0;
-    margin-top: 80px;
+    margin-top: 70px;
     background: var(--primary-color);
     color: white;
 }
@@ -423,6 +532,20 @@ main div.intro {
     color: white;
     padding: 20px;
     border-radius: 6px;
+}
+
+@media (max-width: 991.98px) {
+    .inner-form-sub input {
+        width: 100%;
+    }
+
+    .subscribe .desc {
+        width: 100%;
+    }
+
+    .form-sub {
+        width: 100%;
+    }
 }
 
 /* End Sub */
@@ -477,7 +600,20 @@ main div.intro {
     text-align: right;
     font-weight: 400;
     line-height: 1.6;
+}
 
+@media (max-width: 991.98px) {
+    .footer .inner-footer-find {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+    .footer .inner-box {
+        margin-bottom: 30px;
+    }
 }
 
 /* End Footer */
