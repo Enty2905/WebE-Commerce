@@ -7,6 +7,7 @@
     background-color: rgba(31, 29, 29, 0.597);
     z-index: 0;
 }
+
 /* Css cho 2 nút back về */
 .login .btn-back {
     position: relative;
@@ -29,12 +30,16 @@
     position: relative;
 }
 
+.inner-login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 70px;
+}
 .inner-login .inner-left {
     width: 50%;
-    padding-top: 100px;
     position: relative;
     z-index: 1;
-    margin-left: 50px;
 }
 
 .inner-box {
@@ -42,15 +47,11 @@
 }
 
 .inner-login .inner-right {
-    position: absolute;
+    position: relative;
     z-index: 1;
-    right: 250px;
-    bottom: 0;
-    padding: 40px 30px 100px; 
+    padding: 40px 30px;
     background-color: white;
-    border-top-left-radius: 20px;
-    max-height: 630px;
-    border-top-right-radius: 20px;
+    border-radius: 20px;
     max-height: 630px;
 }
 
@@ -62,7 +63,7 @@
 }
 
 .inner-login .logo {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
     font-size: 5rem;
     color: white;
     font-weight: 900;
@@ -104,6 +105,7 @@ button {
 .btn-login a {
     color: white;
 }
+
 /* Để thẻ div và span có thể nằm trên 1 dòng */
 .line {
     display: flex;
@@ -153,27 +155,24 @@ button img {
     font-weight: 800;
     text-align: center;
 }
+
 /* Reponsive khi màn hình về các độ dài khac nhau : width của màn hình */
 @media (max-width: 1199.98px) {
     .inner-login {
         display: flex;
         align-items: center;
-        justify-content:center;
+        justify-content: center;
     }
-    .inner-login .inner-left{
+
+    .inner-login .inner-left {
         margin-left: 0;
     }
-    .inner-login .inner-right {
-        position: relative;
-        right: 0;
-        bottom: -0;
-        border-radius: 6px;
-    }
+
 }
 
 /* Khi còn 991px thì ẩn khối bên phải */
 @media (max-width: 990.98px) {
-    .inner-login .inner-left{
+    .inner-login .inner-left {
         display: none;
     }
 }
