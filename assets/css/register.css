@@ -175,7 +175,7 @@ button img {
 @media (max-width: 990.98px) {
     .inner-register{
         justify-content: center;
-    }
+    } 
     .inner-register .inner-left {
         display: none;
     }
