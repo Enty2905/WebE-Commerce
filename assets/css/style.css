@@ -3,7 +3,40 @@
         text-align: center;
     }
 }
+.position {
+    background: #2dbcc6c6;
+    padding: 15px 0;
+    margin: 40px 0 50px;
+}
 
+.position .inner-position {
+    display: flex;
+    align-items: center;
+}
+
+.position .inner-position a {
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+}
+
+.position .inner-position span {
+    margin: 0 5px;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.position .inner-position .page-position {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.position .inner-position a:hover {
+    color: var(--primary-color);
+
+}
 /* Button */
 .btn {
     min-width: 180px;
