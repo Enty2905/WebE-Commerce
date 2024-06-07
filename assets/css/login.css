@@ -40,6 +40,7 @@
     width: 50%;
     position: relative;
     z-index: 1;
+    flex-grow: 1;
 }
 
 .inner-box {
@@ -53,6 +54,7 @@
     background-color: white;
     border-radius: 20px;
     max-height: 630px;
+    flex-grow: 1;
 }
 
 .inner-right .title {
@@ -172,8 +174,15 @@ button img {
 
 /* Khi còn 991px thì ẩn khối bên phải */
 @media (max-width: 990.98px) {
+    .inner-login{
+        justify-content: center;
+    } 
     .inner-login .inner-left {
         display: none;
+    }
+    .inner-login .inner-right{
+        width: 70%;
+        flex-grow: 0;
     }
 }
 
