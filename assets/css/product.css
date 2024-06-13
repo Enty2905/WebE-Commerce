@@ -14,7 +14,7 @@
     display: flex;
     gap: 50px;
 }
-
+ 
 .info .select {
     border: 1px solid grey;
     padding: 10px 15px;
@@ -110,5 +110,9 @@
     width: 100%;
     padding: 5px 0;
 }
-
+.product .image{
+    width: 330px;
+    height: 245px;
+    object-fit: cover;
+}
 /* End Sofa */
